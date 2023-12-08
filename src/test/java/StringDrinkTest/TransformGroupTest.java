@@ -1,10 +1,14 @@
-import org.example.*;
+package StringDrinkTest;
+
+
+import Drink.*;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TransformGroupTest {
     @Test
@@ -17,7 +21,7 @@ public class TransformGroupTest {
         transformers.add(cc);
         StringTransformerGroup tg = new StringTransformerGroup(transformers);
         tg.execute(drink);
-        assertEquals("dCbA-DcBa", drink.getText());
+        Assertions.assertEquals("dCbA-DcBa", drink.getText());
     }
 
 }

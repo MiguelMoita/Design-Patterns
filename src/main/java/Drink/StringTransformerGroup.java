@@ -1,8 +1,8 @@
-package org.example;
+package Drink;
 
 import java.util.List;
 
-public class StringTransformerGroup implements  StringTransformer{
+public class StringTransformerGroup implements StringTransformer {
     private final List<StringTransformer> transformers;
 
     public StringTransformerGroup(List<StringTransformer> transformers) {this.transformers = transformers;}

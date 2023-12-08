@@ -1,4 +1,4 @@
-package org.example;
+package Drink;
 
 import java.util.List;
 

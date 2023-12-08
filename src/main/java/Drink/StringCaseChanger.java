@@ -1,4 +1,6 @@
-package org.example;
+package Drink;
+
+
 
 public class StringCaseChanger implements StringTransformer {
     @Override

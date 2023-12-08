@@ -1,11 +1,9 @@
-import org.example.StringDrink;
-import org.example.StringInverter;
-import org.example.StringCaseChanger;
-import org.example.StringReplacer;
+package StringDrinkTest;
 
+import Drink.*;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
-
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TransformUndoTest {
     @Test
@@ -20,10 +18,10 @@ public class TransformUndoTest {
         sr.execute(drink);
 
         sr.undo(drink);
-        assertEquals("dCbA-DcBa", drink.getText());
+        Assertions.assertEquals("dCbA-DcBa", drink.getText());
         cc.undo(drink);
-        assertEquals("DcBa-dCbA", drink.getText());
+        Assertions.assertEquals("DcBa-dCbA", drink.getText());
         si.undo(drink);
-        assertEquals("AbCd-aBcD", drink.getText());
+        Assertions.assertEquals("AbCd-aBcD", drink.getText());
     }
 }

@@ -1,10 +1,16 @@
-import org.example.*;
+package StringDrinkTest;
+
+
+
+import Drink.*;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+
 
 public class StringRecipeTest {
     @Test
@@ -21,6 +27,6 @@ public class StringRecipeTest {
 
         StringRecipe recipe = new StringRecipe(transformers);
         recipe.mix(drink);
-        assertEquals("dCbX-DcBa",drink.getText());
+        Assertions.assertEquals("dCbX-DcBa",drink.getText());
     }
 }

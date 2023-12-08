@@ -1,5 +1,4 @@
-package org.example;
-
+package Drink;
 public interface StringTransformer {
     void execute(StringDrink drink);
 

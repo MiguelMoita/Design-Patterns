@@ -1,5 +1,4 @@
-package org.example;
-
+package Drink;
 public class StringDrink {
     private String text;
 

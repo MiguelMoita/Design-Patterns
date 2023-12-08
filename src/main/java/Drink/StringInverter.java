@@ -1,4 +1,4 @@
-package org.example;
+package Drink;
 
 public class StringInverter implements StringTransformer {
     @Override

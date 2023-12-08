@@ -1,4 +1,4 @@
-package org.example;
+package Drink;
 
 public class StringReplacer implements StringTransformer {
     private final char oldChar;

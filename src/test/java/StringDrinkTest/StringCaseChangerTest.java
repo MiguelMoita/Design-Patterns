@@ -1,5 +1,10 @@
-import org.example.StringCaseChanger;
-import org.example.StringDrink;
+package StringDrinkTest;
+
+
+import Drink.StringCaseChanger;
+import Drink.StringDrink;
+
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,6 +15,6 @@ public class StringCaseChangerTest {
         StringDrink drink = new StringDrink("aBcD");
         StringCaseChanger cc = new StringCaseChanger();
         cc.execute(drink);
-        assertEquals("AbCd",drink.getText());
+        Assertions.assertEquals("AbCd",drink.getText());
     }
 }
