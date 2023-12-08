@@ -1,11 +1,11 @@
 package StringBarTest;
 
-import Bar.*;
-import Client.HumanClient;
+import  Bar.*;
+import Clients.HumanClient;
+
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
-
-public class removeObserver {
+public class RemoveObserverTest {
     @Test
     public void removeObserver() {
         Bar bar = new StringBar();
@@ -14,9 +14,7 @@ public class removeObserver {
         bar.removeObserver(clientMock);
         bar.startHappyHour();
         bar.endHappyHour();
-        Mockito.verify(clientMock,
-                Mockito.never()).happyHourStarted(bar);
-        Mockito.verify(clientMock,
-                Mockito.never()).happyHourEnded(bar);
+        Mockito.verify(clientMock,Mockito.never()).happyHourStarted(bar);
+        Mockito.verify(clientMock,Mockito.never()).happyHourEnded(bar);
     }
 }

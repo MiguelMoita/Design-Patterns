@@ -1,5 +1,8 @@
 package Bar;
 
+import Drink.StringDrink;
+import Drink.StringRecipe;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -17,4 +20,6 @@ public class StringBar extends Bar {
         isHappyHour = false;
         notifyObservers();
     }
+
+    public void order(StringDrink drink, StringRecipe recipe) { recipe.mix(drink);}
 }

@@ -1,7 +1,9 @@
 package StringDrinkTest;
 
-import Drink.*;
-
+import Drink.StringCaseChanger;
+import Drink.StringDrink;
+import Drink.StringInverter;
+import Drink.StringReplacer;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 

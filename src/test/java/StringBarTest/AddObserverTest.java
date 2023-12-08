@@ -1,12 +1,12 @@
 package StringBarTest;
 
-import Bar.*;
-import Client.HumanClient;
+import  Bar.*;
+import Clients.HumanClient;
+
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 
-public class addObserverTest {
-
+public class AddObserverTest {
     @Test
     public void addObserver() {
         Bar bar = new StringBar();
