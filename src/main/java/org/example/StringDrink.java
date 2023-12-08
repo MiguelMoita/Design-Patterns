@@ -6,7 +6,6 @@ public class StringDrink {
     public StringDrink(){
         this.text = "";
     }
-
     public StringDrink(String text){
         this.text = text;
     }
